@@ -1,0 +1,25 @@
+# This is the only thing that works to protect gif|jpg|jpeg|pdf|zip files in a dir which are used by a PHP file in its parent dir
+RewriteEngine on 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost.*$ [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost/spencerbartzdotcom [NC] 
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?localhost/spencerbartzdotcom.*$ [NC] 
+RewriteRule \.(gif|jpg|jpeg|pdf|zip)$ - [F]
+
+# Turn off directory browsing
+Options -Indexes
+
+# Hide files of type .png, .zip, .jpg, .gif and .doc from directory browsing listing
+# IndexIgnore *.png *.zip *.jpg *.gif *.doc
+
+# Deny access to files with extensions
+# <FilesMatch "\.(ini|jpeg|png|gif)$">
+#    Order allow,deny
+#    Deny from all
+# </FilesMatch>
+
+# Deny access to filenames starting with dot(.)
+# <FilesMatch "^\.">
+#    Order allow,deny
+#    Deny from all
+# </FilesMatch>
