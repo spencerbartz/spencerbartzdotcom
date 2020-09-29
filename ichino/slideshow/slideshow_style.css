@@ -1,0 +1,164 @@
+body 
+{
+	background-color:#000000;
+	color:#00ff00;
+	scrollbar-arrow-color: 00ff00;
+	scrollbar-base-color: black;   
+	scrollbar-dark-shadow-color: blue;
+	scrollbar-3dlight-color:black;
+	scrollbar-face-color: 1f5171;
+	scrollbar-highlight-color: blue;
+	scrollbar-shadow-color: blue;
+	scrollbar-darkshadow-color: black;
+	font-family: arial; 
+}
+
+.imgcenter
+{
+
+	width:500px;
+	height:300px;
+	
+	/*experimental*/
+	margin: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
+        border: solid 1px #BDBED9;
+        background-color:#F5F5F8;
+        box-shadow: 1px 1px 6px #888888;
+        -webkit-box-shadow: 1px 1px 6px #888888;
+        -moz-box-shadow: 1px 1px 6px #888888;
+        border-radius:10px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+}
+
+div.container
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:530px;
+	height:330px;
+	border-style:solid;
+	border-width:5px;
+	border-color:#0000ff;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+
+.image_rounded_shadow 
+{
+	display: inline-block;
+	margin: 5px 5px 5px 5px;
+	padding: 10px 10px 10px 10px;
+        border: solid 1px #BDBED9;
+        background-color:#F5F5F8;
+        box-shadow: 1px 1px 6px #888888;
+        -webkit-box-shadow: 1px 1px 6px #888888;
+        -moz-box-shadow: 1px 1px 6px #888888;
+        border-radius:10px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+}
+
+.buttonfade
+{
+	width: 5%;;
+	text-align:  center;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:solid;
+	border-width:5px;
+	border-color:#0000ff;
+
+        box-shadow: 1px 1px 6px #888888;
+        -webkit-box-shadow: 1px 1px 6px #888888;
+        -moz-box-shadow: 1px 1px 6px #888888;
+        border-radius:10px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+}
+
+div.header
+{
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	align:center;
+	text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #00ff00, 0 0 70px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+	
+	/*background-color: white;
+	filter: progid:DXImageTransform.Microsoft.Chroma(color='white') progid:DXImageTransform.Microsoft.Alpha(opacity=100) progid:DXImageTransform.Microsoft.dropshadow(color=#0000ff,offX=1,offY=1) progid:DXImageTransform.Microsoft.dropshadow(color=#0000ff,offX=1,offY=1) progid:DXImageTransform.Microsoft.dropshadow(color=#0000ff,offX=1,offY=1) progid:DXImageTransform.Microsoft.dropshadow(color=#0000ff,offX=1,offY=1);
+    	zoom: 1;
+	*/
+	
+	
+
+	
+	
+	border-style:solid;
+	border-width:5px;
+	border-color:#0000ff;
+	margin:4px;
+	padding:10px;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	/*behavior: url(css/border-radius.htc);*/
+	border-radius:42px;
+}
+
+	.shadow 
+	{
+		height: 1em;
+		filter: Shadow(Color=#666666, 	
+				Direction=135, 
+				Strength=5);
+}
+
+/* To center a block-level element of unknown width */
+ .centered-block-outer 
+ { 
+   overflow: hidden;
+   position: relative;/* ie7 needs position:relative here*/
+ }
+.centered-block-middle 
+{
+  float: left;
+  position:relative;
+  left:50%;
+}
+.centered-block-inner 
+{
+  position:relative;
+  left:-50%;
+}
+
+/* LINK RELATED STYLES */
+
+A:link {text-decoration: none; color: blue;}
+A:visited {text-decoration: none; color: blue;}
+A:active {text-decoration: none; color: blue;}
+A:hover {text-decoration: none; color: blue;}
+
+a.forumbutton 
+{
+	-moz-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3d94f6), color-stop(1, #0000ff) );
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #0000ff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#0000ff');
+	background-color:#3d94f6;
+	-moz-border-radius:42px;
+	-webkit-border-radius:42px;
+	border-radius:42px;
+	display:inline-block;
+	color:#00ff00;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #1570cd;
+}
