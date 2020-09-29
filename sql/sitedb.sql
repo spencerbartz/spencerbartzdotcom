@@ -17,8 +17,6 @@ CREATE TABLE IF NOT EXISTS `users` (
   `date_last_updated` DATETIME
 );
 
-INSERT INTO `users` VALUES (1,'okyakusan','1dukX3.KTnx..','admin@spencerbartz.com','','1d51980ee487abaa','','guest', NOW(), NOW());
-
 CREATE TABLE IF NOT EXISTS `images` (
   `id`                INT(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   `image_data`        LONGBLOB NOT NULL,
