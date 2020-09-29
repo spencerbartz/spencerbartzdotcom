@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted area"
+AuthUserFile /hermes/bosnaweb23a/b2202/ipg.spencerbartzcom1/news/.htpasswd
+Require valid-user
