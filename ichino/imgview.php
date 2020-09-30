@@ -13,6 +13,7 @@
         echo "<html>";
         echo "<head><title>Ichino!</title>";
         echo "<link rel=\"stylesheet\" href=\"../css/BluePigment.css\" type=\"text/css\" />";
+        echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"slideshow/slideshow_style.css\">";
         echo "<link rel=\"shortcut icon\" href=\"../images/favicon.ico\" />";
         echo "<script type=\"text/javascript\" src=\"../js/jquery-1.11.2.min.js\"></script>";
         echo "<script type=\"text/javascript\" src=\"../js/util.js\"></script>";
@@ -27,6 +28,16 @@
 
         echo "<span class=\"white\"><a href=\"shashin/952020.pdf\" class=\"white\"><h3>Download PDF</h3></a></span><br/>";
         echo "<span class=\"white\"><a href=\"index.php\" class=\"white\"><h3>Back to Login</h3></a></span><br/>";
+
+
+        echo "<div class=\"container\">";
+		echo "<div id=\"image_area\" class=\"imgcenter centered\"></div>";
+        echo "</div>";
+
+        echo "<button id=\"play-button\"></button>";
+        echo "<button id=\"pause-button\"></button>";
+        echo "<br />";
+        
 
         // Get a list of files from the "shashin" directory (remove ./ and ../)
         $file_list = array_diff(scandir("shashin"), array('..', '.', '.htaccess', '952020.pdf'));
@@ -55,6 +66,8 @@
 
         echo "</div>";
         echo "</div>";
+        
+        echo "<script src=\"slideshow/slideshow.js\"></script>";
 
         echo "</body>";
         echo "</html>";

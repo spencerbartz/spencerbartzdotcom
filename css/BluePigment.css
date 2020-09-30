@@ -58,12 +58,14 @@ ul, ol {
 /* images */
 img {
 	background: #FAFAFA;
-   border: 1px solid #0F7ACC;
+	border: 1px solid #0F7ACC;
 	padding: 6px;
 }
+
 img.float-right {
    margin: .5em 0 1em 1em;   
 }
+
 img.float-left {
    margin: .5em 1em 1em 0;
 }
@@ -79,10 +81,12 @@ code {
   background: #1E89DC;
   border: 1px solid #0065C6;   
 }
+
 acronym {
   cursor: help;
   border-bottom: 1px solid #0065C6;
 }
+
 blockquote {
 	margin: 10px 15px;
  	padding: 10px 0 10px 28px;  
@@ -96,9 +100,11 @@ table {
 	margin: 10px 15px; 
 	border-collapse: collapse;			
 }
+
 th strong {
 	color: #fff;
 }
+
 th {
 	background: #93BC0C;
 	height: 3em;
@@ -110,21 +116,26 @@ th {
 	border-bottom: solid 2px #8EB200; 
 	border-top: solid 2px #8EB200;
 }
+
 tr {
 	color: #707070;
 	height: 2.5em;	
 }
+
 td {
 	padding: 12px;
 	border-left: 1px solid #FFF;
 	border-bottom: solid 1px #ffffff;
 }
+
 td.first,th.first {
 	border-left: 0px;
 }
+
 tr.row-a {
 	background: #F8F8F8;
 }
+
 tr.row-b {
 	background: #E0E0E0;
 }
@@ -137,22 +148,26 @@ form {
 	border: 1px solid #0065C6; 
 	background-color: #1E89DC; 
 }
+
 fieldset {
 	margin: 0;
 	padding: 0;
 	border: none;
 }
+
 label {
 	display:block;
 	font-weight:bold;
 	margin: .4em 0;	
 }
+
 input {
 	padding: .3em;
 	border: 1px solid #eee;
 	font: normal 1em Verdana, sans-serif;
 	color:#777;
 }
+
 textarea {
 	width: 55%;
 	padding: .3em;
@@ -162,6 +177,7 @@ textarea {
 	display:block;
 	color:#777;
 }
+
 input.button { 
 	font: bold 1em Arial, Sans-serif; 
 	margin: 0;
