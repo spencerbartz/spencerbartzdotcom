@@ -18,7 +18,15 @@
 	-webkit-border-radius: 10px;
 }
 
-.slideshow-image {
+.slideshow-container {
+	float: left;
+}
+
+.vids {
+	float: inline-end;
+}
+
+#slideshow-image {
 	max-width:  800px;
 	max-height: 600px;
 }
@@ -37,4 +45,13 @@ button#pause-button {
 	background-image:  url("https://www.freeiconspng.com/uploads/pause-icon-5.png");
 	background-size: 150px 150px;
 	background-color: transparent;
+}
+
+#slideshow-overlay {
+	visibility: hidden;
+	width:              815px;
+	height:             615px;
+	background-color: rgba(100, 100, 120, 0.9);
+	position:           relative;
+	z-index:            2;
 }

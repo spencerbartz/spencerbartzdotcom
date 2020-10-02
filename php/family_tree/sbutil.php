@@ -34,9 +34,8 @@ function printMenu($curPage, $curDB = "")
          <li class="has-sub"><a href="search.php<?php echo $curDB; ?>"><span><?php echo _("Select Family Line"); ?></span></a>
             <ul>
             <?php
-            	include "dbconnect.php";
-		
-		$sql = "SELECT familyname FROM familynames"; 
+				include "dbconnect.php";
+				$sql = "SELECT familyname FROM familynames"; 
         	
         	if(!$res = $mysqli->query($sql))
         	{

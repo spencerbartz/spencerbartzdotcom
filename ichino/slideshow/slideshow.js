@@ -9,30 +9,30 @@ var timer = setInterval(function () {
 	}
 }, 100);
 
-var imageArea = document.getElementById("image_area");
+var imageArea = document.getElementById("image-area");
 imageArea.style.opacity = "0";
 
 var imgNum = 0;
 var imgTag = "";
 var count = 0; // Controls where we are in the fading cycle (Not count of images)
-var totalImages = 39;
+var totalImages = 45;
 var paused = false;
 
 const playButton = document.getElementById("play-button");
 playButton.addEventListener("click", function() {
-	paused = false;
+	play();
 });
 
 const pauseButton = document.getElementById("pause-button");
 pauseButton.addEventListener("click", function() {
-	paused = true;
+	pause();
 });
 
 function slideShow() {
 	
 	// count == 0 means we have started a new cycle.
 	if (count == 0) {
-		imgTag = "<img src=\"shashin/" + imgNum + ".jpg\" class=\"slideshow-image\" />";
+		imgTag = "<img src=\"shashin/" + imgNum + ".jpg\" id=\"slideshow-image\" />";
 		imageArea.innerHTML = imgTag;
 	}
 	
@@ -66,3 +66,13 @@ function slideShow() {
 		console.error("Error: Image opacity out of bounds." + imageArea.style.opacity);
 	}
 }
+
+function play() {
+	paused = false;
+	// document.getElementById("slideshow-image").style.filter = "brightness(100%)"
+}
+
+function pause() {
+	paused = true;
+	// document.getElementById("slideshow-image").style.filter = "brightness(50%)"
+} 

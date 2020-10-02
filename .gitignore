@@ -1,10 +1,11 @@
+*.gif
+*.ico
 *.jpeg
 *.jpg
+*.json
+*.mp3
 *.mp4
 *.pdf
-*.json
-*.ico
 *.png
-*.gif
 *.sql
 

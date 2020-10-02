@@ -30,25 +30,37 @@
         echo "<span class=\"white\"><a href=\"index.php\" class=\"white\"><h3>Back to Login</h3></a></span><br/>";
 
 
-        echo "<div class=\"container\">";
-		echo "<div id=\"image_area\" class=\"imgcenter centered\"></div>";
+        echo "<div class=\"slideshow-container\">";
+
+        echo "<div class=\"container centered\">";
+        echo "<div id=\"image-area\" class=\"imgcenter centered\">";
         echo "</div>";
 
+        echo "<div class=\"centered\">";
         echo "<button id=\"play-button\"></button>";
         echo "<button id=\"pause-button\"></button>";
-        echo "<br />";
-        
+    
+        echo "</div>";
 
-        // Get a list of files from the "shashin" directory (remove ./ and ../)
-        $file_list = array_diff(scandir("shashin"), array('..', '.', '.htaccess', '952020.pdf'));
+        echo "</div>";
 
-        $images = array_filter($file_list, function($v, $k) {
+        echo "</div>";
+
+        // Get a list of filenames from the "shashin" directory (remove ./ and ../)
+        $filename_list = array_diff(scandir("shashin"), array('..', '.', '.htaccess', '952020.pdf'));
+
+        $images = array_filter($filename_list, function($v, $k) {
             return ends_with(strtolower($v), ".jpeg") || ends_with(strtolower($v), ".jpg");
         }, ARRAY_FILTER_USE_BOTH);
 
-        $videos = array_filter($file_list, function($v, $k) {
+        // Sort image filenames naturally. (Stupid default ordering is 1.jpg, 10.jpg, 11.jpg ... N.jpg, N0.jpg, N1.jpg)
+        natsort($images);
+
+        $videos = array_filter($filename_list, function($v, $k) {
             return ends_with(strtolower($v), ".mp4");
         }, ARRAY_FILTER_USE_BOTH);
+
+        echo "<div class=\"vids\">";
 
         foreach ($videos as $vid) {
             echo "<video controls width=\"500\">";
@@ -56,6 +68,8 @@
             echo "<span class=\"white\"><a href=\"shashin/" . $vid . "\" class=\"white\"><h3>Download " . $vid . "</h3></a></span><br/>";
             echo "</video>";
         }
+
+        echo "</div>";
 
         foreach ($images as $img) {
             echo "<img src=\"shashin/" . $img . "\" style=\"max-width: 1200px;\" /><br/><br/>";
