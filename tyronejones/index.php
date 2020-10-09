@@ -24,7 +24,7 @@
                     <div class="box">
                         <h1><span class="white">Sign in</span></h1>
                         <h3><?php echo $error_msg; ?></h3>
-                        <form action="imgview.php" method="POST">
+                        <form action="mp3listing.php" method="POST">
 
                             <div>
                                 <label for="username">User Name:</label>
